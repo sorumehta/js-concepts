@@ -13,6 +13,6 @@ const user1 = createUser('Saurabh', 9)
 user1.increment()
 console.log(user1)
 
-// Remember that you can store functionality in progto but you cannot
+// Drawback here is that you can store functionality in progto but you cannot
 // maintain state in proto because each user instance refers to the 
 // same proto instance

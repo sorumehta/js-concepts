@@ -1,5 +1,3 @@
-// Not to be confused with functional programming
-// No need of this keyword. Just take the state as function parameter.
 
 const newUser = (state) => ({
     scoreIncrement: () => {
@@ -11,6 +9,7 @@ const newUser = (state) => ({
     }
 })
 
+// This is just like cloning, but with closure to hide our properties.
 const user1 = newUser({name: 'Saurabh', score: 9})
 user1.scoreIncrement();
 console.log(user1.getScore())
